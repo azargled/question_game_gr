@@ -1,0 +1,114 @@
+﻿<html>
+     <head>
+	 <meta http-equiv="content-type" content="text-html; charset=utf-8"> 
+		<title>Εγγραφή χρήστη</title>		<!-- Εμφάνισή Επικεφαλίδας -->
+	 <style type="text/css">
+
+		p.center { 
+		text-align: center; }
+
+	  blockquote {
+ 		border-top: 1pt solid black;
+  		border-right: 1pt solid black;
+  		border-left: 1pt solid black;
+		border-bottom: 1pt solid black;
+	  }
+	  </style>
+
+	  <script language="javascript">	// Ορισμός javascript
+
+		function check() {		// Συνάρτηση Έλεγχος Κενών Πεδίων
+
+	  		ref_user = document.getElementById('user');
+	  		ref_pass1 = document.getElementById('pass1');
+	  		ref_pass2 = document.getElementById('pass2');
+			
+	  	} 	// Τέλος συνάρτησης
+
+			
+		function check1(text) {				// Συνάρτηση έλεγχος χαρακτήρων
+			
+			for (i=0; i<text.length; i++) {                 
+       		    		if (text.charAt(i)<=4)		// Εαν χαρακτήρες < 4 
+ 	      		    		alert('Έχετε συμπληρώσει λιγότερους χαρακτήρες απο το επιτρεπόμενο όριο');
+
+                 		if (string.charAt(i)>=10)	// Εαν χαρακτήρες > 10   
+                    			alert('Έχετε συμπληρώσει περισσότερους χαρακτήρες απο το επιτρεπόμενο όριο');
+             		}
+
+		}	// Τέλος συνάρτησης
+
+	</script>
+     </head>
+
+     	<body bgcolor=Green>			<!-- Ορισμός του φόντου σελίδας -->
+
+		<form action="newreg.php" name="form2" method="post">	<!-- Ορισμός της φόρμας -->
+			<br><br>
+			<h1><p class="center">
+				&nbsp; &nbsp;
+					Εγγραφή χρήστη
+			</p></h1>
+	
+			<blockquote>					<!-- Ορισμός του πλαισίου -->
+				  
+				  <br>
+
+				    &nbsp; &nbsp;
+				    	Όνομα (με κεφαλαίους ελληνικούς χαρακτήρες)
+				    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				    <input type="text" name="firstname" size=30>
+					
+				  <br><br>
+				    &nbsp; &nbsp;
+				    	Επώνυμο (με κεφαλαίους ελληνικούς χαρακτήρες)
+				    &nbsp; &nbsp; &nbsp; &nbsp;
+				    <input type="text" name="surname" size=30>
+					
+				  <br><br>
+				    &nbsp; &nbsp;
+				    	Επιθυμητό όνομα χρήστη (από 4 έως 10 χαρακτήρες) 
+				    &nbsp; &nbsp;
+				    <input type="text" name="user" size=10>
+
+				  <br><br>
+				    &nbsp; &nbsp;
+				    	Επιθυμητό συνθηματικό (από 4 έως 10 χαρακτήρες) 
+				    &nbsp; &nbsp; &nbsp;
+				    <input type="password" name="pass1" size=10>
+
+				  <br><br>
+				    &nbsp; &nbsp;
+				    	Επιβεβαίωση παραπάνω συνθηματικού 
+				     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				    <input type="password" name="pass2" size=10>
+
+				  <br><br>
+				    &nbsp; &nbsp;
+				    	E-mail
+				    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				    <input type="text" name="email" size=35>
+
+				  <br><br><br>
+				    &nbsp; &nbsp;
+				    <input type="submit" name="button2" onClick = "check1('text')" value="Εγγραφή">
+				  <br><br>
+
+			</blockquote>					<!-- Τέλος ορισμού πλαισίου -->
+		</form>							<!-- Τέλος ορισμού φόρμας -->
+
+		<br><br><br>						<!-- Εμφάνιση τριών κενών γραμμών -->
+
+ 		<center>						<!-- Στήχιση στο κέντρο -->
+		     <a href="intro.php" >    				<!-- Υπερσύνδεση στη σελίδα intro.html -->
+				<img src="home.gif" alt="Επιστροφή στην αρχική σελίδα">
+	              	<br>						<!-- Άλλαξε μια γραμμή -->
+			  <font color=LightBlue>			<!-- Χρωμάτισε με ελαφρό μπλέ το παρακάτω μήνυμα -->
+        			Επιστροφή στην αρχική σελίδα		<!-- Εμφάνιση μηνύματος -->
+			  </font>					<!-- Τέλος της ιδιότητας χρώματος -->
+		     </a>						<!-- Τέλος της ιδιότητας επικοινωνίας -->
+		</center>						<!-- Τέλος στήχισης -->
+
+     </body>
+</html>
+

@@ -1,0 +1,52 @@
+body {
+   background-color: Sienna;
+}
+
+.center { 
+   text-align: center; 
+}
+
+.right {
+   text-align: center;
+   }
+6948241145
+#login {
+   border-top: 1pt solid black;
+   border-right: 1pt solid black;
+   border-left: 1pt solid black;
+   border-bottom: 1pt solid black;
+   -moz-border-radius: 15px;
+   border-radius: 15px;
+   
+   margin-left: 540px;
+   margin-right: 40px;
+   
+   }
+
+#help {
+   position: fixed;
+   top: 30px;
+   right: 200px;
+}
+
+#contact {
+   position: fixed;
+   top: 30px;
+   right: 50px;
+}
+
+a:link {
+   color: GoldenRod;
+}
+
+a:visited {
+   color: GoldenRod;
+}
+
+a:hover {
+   color: Maroon;
+}
+
+a:active {
+   color: GoldenRod;
+}
